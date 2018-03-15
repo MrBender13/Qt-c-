@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RegistrationWindow</class>
+ <widget class="QDialog" name="RegistrationWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>334</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="messageLabel">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>20</y>
+     <width>181</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Пожалуйста, зарегистрируйтесь!</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>280</y>
+     <width>158</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QPushButton" name="registerButton">
+      <property name="text">
+       <string>Регистрация</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="exitButton">
+      <property name="text">
+       <string>Назад</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>154</x>
+     <y>62</y>
+     <width>135</width>
+     <height>204</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLineEdit" name="surnameInput"/>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="nameInput"/>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="fatherNameInput"/>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="ageInput"/>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="phoneInput"/>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="adressInput"/>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="loginInput"/>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="passwordInput">
+      <property name="echoMode">
+       <enum>QLineEdit::Password</enum>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>62</x>
+     <y>62</y>
+     <width>86</width>
+     <height>201</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QLabel" name="surnameLabel">
+      <property name="text">
+       <string>Фамилия</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="nameLabel">
+      <property name="text">
+       <string>Имя</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="fathernameLabel">
+      <property name="text">
+       <string>Отчество</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="ageLabel">
+      <property name="text">
+       <string>Возраст</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="phoneLabel">
+      <property name="text">
+       <string>Номер телефона</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="adressLabel">
+      <property name="text">
+       <string>Адрес</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="loginLabel">
+      <property name="text">
+       <string>Логин</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="passwordLabel">
+      <property name="text">
+       <string>Пароль</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>exitButton</sender>
+   <signal>clicked()</signal>
+   <receiver>RegistrationWindow</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>202</x>
+     <y>294</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>211</x>
+     <y>319</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
